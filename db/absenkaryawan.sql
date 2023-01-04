@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 06, 2020 at 02:26 PM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.9
+-- Generation Time: Jan 03, 2023 at 10:02 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -59,7 +59,7 @@ CREATE TABLE `tb_absen` (
 --
 
 INSERT INTO `tb_absen` (`id`, `nip`, `nama`, `tanggal`, `jam`, `jam2`) VALUES
-(31, '191202191202', 'Muhammad Zibran', '06-12-2020', '09:34 am', '0934'),
+(31, '191202191202', 'yesi meliyana', '06-12-2022', '09:34 am', '0934'),
 (33, '28938932', 'karyawan', '06-12-2020', '03:32 pm', '0332');
 
 -- --------------------------------------------------------
@@ -82,7 +82,7 @@ CREATE TABLE `tb_admin` (
 --
 
 INSERT INTO `tb_admin` (`id`, `username`, `password`, `nama`, `kontak`, `foto`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'admin absen', 'admin@email.com', '555-admin logoZ.jpg');
+(1, 'admin', 'admin', 'samsung', 'samsung@gmail.com', '555-admin logoZ.png');
 
 -- --------------------------------------------------------
 
@@ -108,8 +108,9 @@ CREATE TABLE `tb_karyawan` (
 --
 
 INSERT INTO `tb_karyawan` (`id`, `nip`, `username`, `password`, `nama`, `tempat_lahir`, `tanggal_lahir`, `alamat`, `kontak`, `foto`) VALUES
-(23, '28938932', 'karyawan', '9e014682c94e0f2cc834bf7348bda428', 'karyawan', 'Jakarta Pusat', '2020-12-16', 'Jakarta Pusat', 'Aldo@gmail.com', ''),
-(25, '191202191202', 'user', 'ee11cbb19052e40b07aac0ca060c23ee', 'Kliment Voroshilov', 'Bogor', '2020-12-15', 'Klapanunggal', 'zibran@gmail.com', '897-gray_blank.png');
+(23, '28938932', 'yesimlyna', '123', 'yesi meliyana', 'Talang Padang', '2001-02-16', 'Bandar Lampung', 'yesimlyna@gmail.com', ''),
+(25, '191202191202', 'adel', '321', 'Chyntia Adelia Valentina Haris', 'Natar', '2002-02-25', 'Natar', 'adeliachyntia111@gmail.com', '897-gray_blank.png'),
+(26, '09929231', 'erna', '231', 'erna novita', 'pesisir barat', '2003-03-03', 'pesisir barat', 'ernanovita@gmail.com', '');
 
 -- --------------------------------------------------------
 
@@ -188,7 +189,7 @@ ALTER TABLE `tb_admin`
 -- AUTO_INCREMENT for table `tb_karyawan`
 --
 ALTER TABLE `tb_karyawan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT for table `tb_keterangan`
