@@ -187,6 +187,9 @@ function simpan_keterangan()
 	}
 }
 // funtion URL, keep it below
+
+
+
 function url()
 {
 	return $url = "//localhost/absenKaryawan/assets/";
